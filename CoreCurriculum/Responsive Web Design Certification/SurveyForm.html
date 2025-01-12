@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+<!-- Title of page -->
+    <h1 id="title">Survey Form</h1>
+    <p id="description">This is description</p>
+
+<!-- Survey form start -->
+    <form id="survey-form">
+      
+<!-- Personal information -->
+      <fieldset id="personal-info">
+        <legend>Personal information</legend>
+        <label id="name-label" for="name">Enter Your Name <input id="name" type="text" placeholder="Your name" required /></label>
+        <label id="email-label" for="email">Enter Your Email <input id="email" type="email" placeholder="youremail@address.com" required /></label>
+        <label id="number-label" for="number">Enter Your Age <input id="number" type="number" min="14" max="120" placeholder="age" /></label>
+
+<!-- Dropdown menu -->
+        <label for="dropdown">Select 
+          <select id="dropdown">
+            <option value="1">Option 1</option>
+            <option value="2">Option 2</option>
+          </select>
+        </label>
+      </fieldset>
+
+<!-- Radio Buttons -->
+      <fieldset id="radio-buttons">
+        <legend>Select Only One Item</legend>
+        <label for="one"><input id="one" type="radio" name="radio" value="one" /> One</label>
+        <label for="two"><input id="two" type="radio" name="radio" value="two" /> Two</label>
+      </fieldset>
+
+<!-- Checkboxes -->
+      <fieldset id="checkboxes">
+        <legend>Select At Least One Item</legend>
+        <label for="cb1"><input id="cb1" type="checkbox" value="first" /> First</label>
+        <label for="cb2"><input id="cb2" type="checkbox" value="second" /> Second</label>
+        <label for="cb3"><input id="cb3" type="checkbox" value="third" /> Third</label>
+      </fieldset>
+
+<!-- Textarea -->
+      <fieldset>
+        <legend>Additional Comments</legend>
+        <label for="ad-co">Comment <textarea id="ad-co" placeholder="Enter the additional comments..."></textarea></label>
+      </fieldset>
+
+<!-- Submit Button Input -->
+      <input id="submit" type="submit" value="Sumbmit" />
+    </form>
+<!-- Survey form end -->
+
+  </body>
+</html>
