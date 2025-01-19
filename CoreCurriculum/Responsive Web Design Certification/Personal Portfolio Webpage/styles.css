@@ -1,0 +1,35 @@
+/* TYPE SELECTOR */
+
+
+
+/* ID SELECTOR */
+#navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 70px;
+}
+
+#welcome-section {
+  margin-top: 100px;
+  height: 100vh;
+}
+
+
+
+/* CLASS SELECTOR */
+.project-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+
+
+/* MEDIA QUERY */
+@media only screen and (max-width: 600px) {
+  .project-container {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}
