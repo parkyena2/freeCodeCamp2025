@@ -1,0 +1,139 @@
+/* UNIVERSAL SELECTOR */
+
+* {
+  box-sizing: border-box;
+
+  font-family: sans-serif;
+}
+
+
+
+
+
+
+/* ROOT SELECTOR (COLOR VARIABLES) */
+
+:root{
+  --main-background: gold;
+  --main-text-color: silver;
+  --shadow-color: black;
+  --input-border-color: black;
+}
+
+
+
+
+
+
+/* TYPE SELECTOR */
+
+body {
+  background-color: var(--main-background);
+  
+  color: var(--main-text-color);
+  text-shadow: 2px 2px var(--shadow-color);
+}
+
+
+
+h1 {
+  width: 70%;
+
+  padding: 20px;
+  margin-top: 60px;
+
+  font-size: 2.5rem;
+
+  border: 2px solid;
+}
+
+
+
+
+
+
+/* CLASS SELECTOR */
+
+.centered {
+  display: block;
+  
+  margin-left: auto;
+  margin-right: auto;
+  
+  text-align: center;
+}
+
+
+
+.input-shadow {
+  box-shadow: 3px 3px var(--shadow-color);
+}
+
+
+
+
+
+
+/* ID SELECTOR */
+
+#number-label {
+  width: fit-content;
+
+  margin-top: 100px;
+  padding: 0.5rem;
+
+  font-size: 1.5rem;
+
+  border-bottom: 2px solid;
+}
+
+
+
+#number {
+  width: 250px;
+  height: 40px;
+
+  margin-top: 50px;
+
+  font-size: 1.5rem;
+
+  border: 2px solid var(--input-border-color);
+  border-radius: 7px;
+}
+
+
+
+#convert-btn {
+  width: 100px;
+  height: 2rem;
+
+  margin-top: 20px;
+  padding-top: 0.4rem;
+
+  font-size: 1rem;
+  font-weight: bold;
+
+  background-color: red;
+  
+  border: 2px solid var(--input-border-color);
+  border-radius: 7px;
+}
+
+
+
+
+
+
+/* PSEUDO SELECTOR */
+
+
+
+
+
+
+/* MEDIA QUERY */
+
+
+
+
+
