@@ -1,0 +1,107 @@
+/* UNIVERSAL SELECTOR */
+* {
+  box-sizing: border-box;
+  font-family: helvetica;
+}
+
+
+
+
+
+
+/* UNIVERSAL SELECTOR */
+
+:root {
+  --border-color: black;
+  --btn-color: gold;
+  --btn-shadow: orange;
+  --page-background: silver;
+}
+
+
+
+
+
+
+/* TYPE SELECTOR */
+
+body {
+  background-color: var(--page-background);
+}
+
+
+
+
+
+
+/* CLASS SELECTOR */
+
+.inblock {
+  display: block;
+}
+
+
+
+.centered {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center
+}
+
+
+
+
+
+
+/* ID SELECTOR */
+
+#header-title {
+  font-weight: normal;
+  font-size: 3rem;
+
+  margin: 3rem;
+}
+
+
+
+#user-input-label {
+  font-size: 1.2rem;
+}
+
+
+
+#user-input {
+  width: 70%;
+  height: 3rem;
+
+  margin-top: 1rem;
+
+  border: 2px solid var(--border-color);
+  border-radius: 10px;
+}
+
+
+
+#btn-container {
+  display: flex;
+  justify-content: center;
+  margin: 2rem;
+}
+
+
+
+#btn-container button {
+  width: 100px;
+  height: 3rem;
+
+  font-size: 1.2rem;
+  font-weight: bold;
+  
+  margin: 10px;
+
+  background-color: var(--btn-color);
+  box-shadow: 0 5px var(--btn-shadow);
+  
+  border: none;
+  border-radius: 10px;
+}
