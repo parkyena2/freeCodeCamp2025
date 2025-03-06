@@ -1,0 +1,87 @@
+:root {
+  --background-page: gold;
+  --text-color-main: silver;
+  --shadow-color-main: black;
+  --label-border-color: red;
+}
+
+
+
+body {
+  box-sizing: border-box;
+  
+  font-family: helvetica;
+  color: var(--text-color-main);
+  text-shadow: 1px 1px 2px var(--shadow-color-main);
+
+  background-color: var(--background-page);
+}
+
+
+
+.block-leveled {
+  display: block;
+}
+
+
+
+#cash {
+  width: 70%;
+  height: 3rem;
+
+  border: none;
+  border-radius: 10px;
+
+  font-size: 1.5rem;
+  font-weight: lighter;
+}
+
+
+
+#cash-label {
+  width: 70%;
+  padding: 1rem;
+  margin-bottom: 2rem;
+  
+  border: 3px solid var(--label-border-color);
+  
+  font-size: 1.5rem;
+}
+
+
+
+.centered {
+  margin-right: auto;
+  margin-left: auto;
+  
+  text-align: center;
+}
+
+
+
+header {
+  margin-bottom: 100px;
+
+  border-bottom: 5px solid;
+}
+
+
+
+header h1 {
+  margin-top: 50px;
+
+  font-size: 3rem;
+  font-weight: normal;
+}
+
+
+
+#purchase-btn {
+  margin-top: 1rem;
+  width: 150px;
+  height: 3rem;
+
+  border: 7px outset;
+
+  font-size: 1.5rem;
+}
