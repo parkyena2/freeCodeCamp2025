@@ -4,11 +4,16 @@
 const searchInput = document.getElementById("search-input");
 const searchButton = document.getElementById("search-button");
 
-/* POKEMON IDENTIFIER */
+/* CONTAINERS */
+const profileContainer = document.getElementById("profile-container");
+const pokemonPhysical = document.getElementById("physical");
+const pokemonImgContainer = document.getElementById("img-container");
+
+/* IDENTIFIERS */
 const pokemonName = document.getElementById("pokemon-name");
 const pokemonId = document.getElementById("pokemon-id");
 
-/* POKEMON PHISICAL */
+/* POKEMON PHYSICAL */
 const pokemonWeight = document.getElementById("weight");
 const pokemonHeight = document.getElementById("height");
 const pokemonTypes = document.getElementById("types");
@@ -40,7 +45,8 @@ const pokeAPIProxyUrl = "https://pokeapi-proxy.freecodecamp.rocks/api/pokemon";
 /* CLEAR WINDOW */
 
 const clearWindow = () => {
-
+  pokemonTypes.innerHTML = ``;
+  pokemonImgContainer.innerHTML = ``;
 };
 
 
@@ -79,10 +85,30 @@ const fillTextData = (fetchedJson) => {
 
 
 
+/* SHOW SPRITE (front_default) IMAGE */
+
+const showImg = (fetchedJson) => {
+  fetchedJson.then((data) => {
+    /* you should add an img element with the id of "sprite" and the src set to the Pokémon's front_default sprite to the page. */
+    const frontDefaultURL = data.sprites.front_default;
+    const frontDefaultImg = document.createElement("img");
+    
+    frontDefaultImg.id = "sprite";
+    frontDefaultImg.src = frontDefaultURL;
+    
+    pokemonImgContainer.appendChild(frontDefaultImg);
+  });
+};
+
+
+
+
+
+
 /* SEARCH POKEMON FUNCTION */
 
 const searchPokemon = () => {
-  const pokemon = searchInput.value;
+  const pokemon = searchInput.value.toLowerCase();
   const searchURL = `${pokeAPIProxyUrl}/${pokemon}`
   const pokemonJson = fetch(searchURL)
   .then((res) => res.json())
@@ -92,6 +118,7 @@ const searchPokemon = () => {
   
   clearWindow();
   fillTextData(pokemonJson);
+  showImg(pokemonJson);
 };
 
 
