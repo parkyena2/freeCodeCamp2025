@@ -1,0 +1,104 @@
+/* WHOLE DOCUMENT */
+
+* {
+  box-sizing: border-box;
+  font-family: helvetica;
+}
+
+
+
+:root {
+  --table-cell-background: gold;
+  --table-font-color: rgb(255, 120, 0);
+  --search-input-border: orange;
+  --search-button-background: orange;
+  --search-button-text: white;
+}
+
+
+
+body {
+  text-align: center;
+}
+
+
+
+/* ELEMENT */
+
+header {
+  margin-bottom: 4rem;
+}
+
+
+
+table {
+  border-spacing: 5px;
+}
+
+
+
+th, td {
+  width: 40%;
+  height: 3rem;
+
+  font-weight: normal;
+
+  color: var(--table-font-color);
+  background-color: var(--table-cell-background);
+}
+
+
+
+thead > tr > th {
+  font-weight: bold;
+}
+
+
+
+/* CLASS */
+
+.block {
+  display: block;
+}
+
+
+
+/* ID */
+
+#search-button {
+  padding: 0.5rem;
+  margin-left: 1rem;
+
+  font-size: 1rem;
+
+  color: var(--search-button-text);
+  background-color: var(--search-button-background);
+
+  border: none;
+  border-radius: 10px;
+}
+
+
+
+#search-input {
+  width: 50%;
+  padding: 0.5rem;
+  
+  font-size: 1.5rem;
+
+  border: 2px solid var(--search-input-border);
+}
+
+
+
+#search-label {
+  margin-bottom: 1rem;
+}
+
+
+
+#stats-table {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
